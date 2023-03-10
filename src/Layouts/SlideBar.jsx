@@ -6,12 +6,12 @@ import { FaHireAHelper } from "react-icons/fa";
 
 function SlideBar() {
   return (
-    <div className="bg-neutral-900 w-60 p-3 flex flex-col text-white overflow-y-auto">
+    <div className="bg-white w-80 p-3 flex flex-col overflow-y-auto">
       <div className="flex items-center gap-2 px-1 p-3">
         <BsHouses fontSize={30} />
-        <span className="text-neutral-100 text-lg">ShowingGuide</span>
+        <span className="text-xl"><strong>ShowingGuide</strong></span>
       </div>
-      <div className="flex flex-col p-4 bg-sky-600 border-neutral-700 rounded-md">
+      <div className="flex flex-col p-4 bg-sky-500 rounded-md">
         <button>Create New Tour <b> + </b></button>
       </div>
       <div className="flex-1 pt-0">

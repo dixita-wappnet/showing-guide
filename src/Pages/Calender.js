@@ -5,7 +5,7 @@ export default function Calender() {
   return (
     <div>
       <h1>This is Calender Page.</h1>
-      <NavLink to="http://localhost:3001/">Go to Dashboard</NavLink>
+      <NavLink to="http://localhost:3000/">Go to Dashboard</NavLink>
     </div>
   )
 }
