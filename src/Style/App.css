@@ -1,7 +1,34 @@
 
-.App {
+body{
   background-color: #F5F6FA;
-  ;
+  color: #525252;
+}
+
+#agent {
+ background-color: #F5F6FA;
+ 
+}
+#agent.hover{
+  background-color:#3b82f6
+}
+#mlsLists{
+  background-color:#EAECF2;
+}
+#drafts{
+  background-color:#EAECF2;
+}
+
+#btn-black{
+  background-color:#0F1C35;
+}
+#btn-secondary{
+  background-color:#555B67;
+}
+#cancel{
+  background-color:#F55E5C;
+}
+#next{
+  background-color:#2E63F6;
 }
 
 .App-header {

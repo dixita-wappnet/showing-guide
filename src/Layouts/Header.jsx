@@ -4,7 +4,8 @@ import { Menu } from '@headlessui/react';
 
 export default function Header() {
   return (
-    <div className="h-16 px-4 flex justify-between items-center text-xl">
+    <>
+    <div className="h-16 px-4 pt-4 flex justify-between items-center lg:text-xl lg:ml-[310px] max-lg:w-full max-lg:hidden">
       <div><strong>Create New Tour</strong></div>
       <div className='flex items-center gap-3 mr-2'>
         <HiOutlineBell/>  
@@ -18,7 +19,7 @@ export default function Header() {
         </Menu>
         <div>
          <span>Jack Hunter</span>
-         <button className='flex flex-col px-3 bg-green-700 border-neutral-700 rounded-md'>Assistant</button>       
+         <button className='flex flex-col px-1 text-sm bg-green-600 border-neutral-700 text-white rounded-md'>Assistant</button>       
         </div>
         <button>
           <HiChevronDown/>        
@@ -26,6 +27,8 @@ export default function Header() {
       
         </div>
        </div>
-    
+
+       
+    </>
   );
 }

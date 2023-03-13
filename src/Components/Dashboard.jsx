@@ -9,27 +9,26 @@ import SelectAgent from "./components/SelectAgent";
 
 export default function Dashboard() {
   return (
-    <>
-      <div className=" flex flex-row gap-2 px-2 py-3 overflow-y-auto ">
+      <div className=" flex flex-row gap-2 px-2 lg:py-3 mt-5 max-lg:flex-col">
         <div>
           <SelectAgent />
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 ">
           <div>
             <ClientDetails />
           </div>
           <div>
             <MeetingDetails />
           </div>
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row  max-lg:flex-col gap-2">
             <MlsNumbers />
             <AddNote />
           </div>
-          <div className="flex gap-4 px-4 py-14 justify-center items-center">
-            <div className="bg-red-500 text-white px-20 py-4 rounded-lg">
+          <div className="flex  gap-4 lg:px-4 py-14 justify-center items-center">
+            <div id="cancel"className="text-white px-14 py-3 rounded-lg">
               <button>Cancel</button>
             </div>
-            <div className="bg-blue-700 text-white px-20 py-4 rounded-lg">
+            <div id="next"className="text-white px-14 py-3 rounded-lg">
               <button>Next</button>
             </div>
           </div>
@@ -44,6 +43,5 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-    </>
   );
 }

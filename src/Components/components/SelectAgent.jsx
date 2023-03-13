@@ -7,7 +7,7 @@ import { FaAngleDown, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 export default function SelectAgent() {
   return (
     <>
-      <div className="bg-white h-[910px]  px-3 py-2 border rounded-lg">
+      <div className="bg-white h-[930px]  px-3 py-3 border  rounded-lg lg:ml-[310px] max-lg:w-full ">
         <span>Select Agent to the New Tour</span>
         <p className="py-2 text-sm text-slate-500">24 agent Found</p>
         <div className="relative">
@@ -23,7 +23,7 @@ export default function SelectAgent() {
           {Agent_Details.map((Agent) => {
             return (
             <div className=" py-1">
-              <div className="flex px-1 py-1 items-center cursor-pointer hover:bg-sky-300  bg-gray-100">
+              <div id="agent" className="flex px-1 py-1 items-center cursor-pointer hover:border border-blue-500">
                 <img
                   src={Agent.photo}
                   alt="pic"
@@ -48,14 +48,14 @@ export default function SelectAgent() {
           })}
         </div>
         <center>
-        <div className="flex justify-center gap-2 pr-3.5">
+        <div className="flex justify-center gap-2 mt-5 pr-3.5">
             <button><FaAngleLeft/></button>
-            <div className="flex bg-sky-300 gap-3 px-6 py-3 rounded-lg" >
+            <div className="flex bg-blue-200 gap-3 px-5 py-2 rounded-lg" >
             <button><b>1</b></button>
             <FaAngleDown className="mt-0.5"/>
             </div>
-            <button className="bg-slate-200 px-4 rounded-lg">50</button>
-            <button className="bg-blue-700 px-4 rounded-lg"><FaAngleRight/></button>
+            <button className="border border-gray-400 px-4 rounded-lg">50</button>
+            <button className="bg-blue-500 px-4 text-white rounded-lg"><FaAngleRight/></button>
         </div>
         </center>
       </div>

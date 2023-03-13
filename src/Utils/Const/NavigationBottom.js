@@ -21,7 +21,7 @@ function SlidebarLinks({slider_items}){
 
     const {pathname} = useLocation()
  
-     return <NavLink to={slider_items.path} className={classNames(pathname === slider_items.path ? 'bg-neutral-700' :'text-black',slideBar_Links_classes) }>
+     return <NavLink to={slider_items.path} className={classNames(pathname === slider_items.path ? 'text-neutral-600' :'text-neutral-600',slideBar_Links_classes) }>
          <span className='text-xl'>{slider_items.icon}</span>
          {slider_items.label}
      </NavLink>
